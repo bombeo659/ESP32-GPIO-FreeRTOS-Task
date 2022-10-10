@@ -6,9 +6,10 @@
 
 void print_studentID(void *pvParameter)
 {
-    while (1)
+    for (;;)
     {
-        printf("\nTask1: 1915676 - %lld\n", esp_timer_get_time()/1000000);
+        // print student ID and time (s)
+        printf("Task1: 1913429 - 1913693 - 1915676 - 1915886, time: %lld(s)\n", esp_timer_get_time() / 1000000);
         vTaskDelay(1000 / portTICK_RATE_MS);
     }
 }
